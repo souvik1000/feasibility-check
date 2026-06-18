@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Unsafe Driving",
+    "score": 14,
+    "total_score": 100,
+    "threshold": 73
+  },
+  {
+    "name": "HOS Compliance",
+    "score": 37,
+    "total_score": 100,
+    "threshold": 70
+  },
+  {
+    "name": "Driver Fitness",
+    "score": 28,
+    "total_score": 100,
+    "threshold": 76
+  },
+  {
+    "name": "Controlled Substances / Alcohol",
+    "score": 68,
+    "total_score": 100,
+    "threshold": 65
+  },
+  {
+    "name": "Vehicle Maintenance",
+    "score": null,
+    "total_score": 100,
+    "threshold": 88
+  },
+  {
+    "name": "HM Compliance",
+    "score": 8,
+    "total_score": 100,
+    "threshold": 86
+  },
+  {
+    "name": "Crash Indicator",
+    "score": null,
+    "total_score": 100,
+    "threshold": 55
+  }
+]
