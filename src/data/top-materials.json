@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "material": "Crushed Rock",
+      "hauled": "25.5k",
+      "gp": "23.5k",
+      "comm": "$900.00"
+    },
+    {
+      "rank": 2,
+      "material": "Flex Base",
+      "hauled": "25.5k",
+      "gp": "23.5k",
+      "comm": "$189.00"
+    },
+    {
+      "rank": 3,
+      "material": "Washed Sand",
+      "hauled": "25.5k",
+      "gp": "23.5k",
+      "comm": "$900.00"
+    },
+    {
+      "rank": 4,
+      "material": "Top Soil",
+      "hauled": "25.5k",
+      "gp": "23.5k",
+      "comm": "$189.00"
+    },
+    {
+      "rank": 5,
+      "material": "Fill Dirt",
+      "hauled": "25.5k",
+      "gp": "23.5k",
+      "comm": "$900.00"
+    }
+  ]
+}

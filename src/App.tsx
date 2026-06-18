@@ -6,6 +6,7 @@ import DownloadableZip from './components/DownloadableZip';
 import { barDataPromise, imagesPromise } from './app.service';
 
 import './App.css';
+import PDFGenerator from './components/PDFGenerator';
 
 const App: React.FC = () => {
   const barData = use(barDataPromise);
@@ -22,6 +23,7 @@ const App: React.FC = () => {
       >
         <PercentileScore barData={barData} />
         <DownloadableZip images={imagesData.images} />
+        <PDFGenerator />
       </Suspense>
     </div>
   );

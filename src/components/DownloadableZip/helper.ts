@@ -1,5 +1,7 @@
 import { downloadZip } from "client-zip"
 
+import { triggerFileDownload } from "../../helper"
+
 // Used generetor to perform async url to fetch data [one-by-one]
 // It will save memory by processing one by one async way.
 async function* imageResponses(urls: string[]) {
@@ -44,12 +46,5 @@ async function* imageResponses(urls: string[]) {
 
 export const handleDownload = async (imageUrls: string[]) => {
     const blob = await downloadZip(imageResponses(imageUrls)).blob()
-
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement("a")
-    a.href = url
-    a.download = "images.zip"
-    a.click()
-    a.remove()
-    URL.revokeObjectURL(url)
+    triggerFileDownload(blob, "images.zip")
 }

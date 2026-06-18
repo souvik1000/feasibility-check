@@ -1,0 +1,132 @@
+{
+  "total": {
+    "ton": "20.8k",
+    "ton_rev": "20.8k",
+    "mat_rev": "12.0k",
+    "cogs": "13.6k",
+    "ton_cog": "12.8k",
+    "mat_cog": "12.0k",
+    "gp": "12.0k",
+    "gp_percent": "30%",
+    "comm": "$3,078.00"
+  },
+  "data": [
+    {
+      "cust": "TXDOT",
+      "job": "Sunrise Solar",
+      "ton": "2.08k",
+      "ton_rev": "2.08k",
+      "mat_rev": "1.28k",
+      "cogs": "2.46k",
+      "ton_cog": "1.28k",
+      "mat_cog": "1.18k",
+      "gp": "0.9k",
+      "gp_percent": "27%",
+      "comm": "$270.00"
+    },
+    {
+      "cust": "Patterson",
+      "job": "Patterson Res",
+      "ton": "2.08k",
+      "ton_rev": "2.08k",
+      "mat_rev": "1.28k",
+      "cogs": "2.46k",
+      "ton_cog": "1.28k",
+      "mat_cog": "1.18k",
+      "gp": "0.9k",
+      "gp_percent": "27%",
+      "comm": "$270.00"
+    },
+    {
+      "cust": "Cash C",
+      "job": "Round Rock",
+      "ton": "2.08k",
+      "ton_rev": "2.08k",
+      "mat_rev": "1.28k",
+      "cogs": "2.46k",
+      "ton_cog": "1.28k",
+      "mat_cog": "1.18k",
+      "gp": "0.9k",
+      "gp_percent": "27%",
+      "comm": "$270.00"
+    },
+    {
+      "cust": "Lonestar",
+      "job": "Lakewood Pk",
+      "ton": "2.08k",
+      "ton_rev": "2.08k",
+      "mat_rev": "1.28k",
+      "cogs": "2.46k",
+      "ton_cog": "1.28k",
+      "mat_cog": "1.18k",
+      "gp": "0.9k",
+      "gp_percent": "27%",
+      "comm": "$270.00"
+    },
+    {
+      "cust": "B & V",
+      "job": "Hwy 290 Ext",
+      "ton": "2.08k",
+      "ton_rev": "2.08k",
+      "mat_rev": "1.28k",
+      "cogs": "2.46k",
+      "ton_cog": "1.28k",
+      "mat_cog": "1.18k",
+      "gp": "0.9k",
+      "gp_percent": "27%",
+      "comm": "$270.00"
+    },
+    {
+      "cust": "TXDOT",
+      "job": "Sunrise Solar",
+      "ton": "2.6k",
+      "ton_rev": "2.6k",
+      "mat_rev": "1.2k",
+      "cogs": "2.54k",
+      "ton_cog": "1.34k",
+      "mat_cog": "1.2k",
+      "gp": "1.26k",
+      "gp_percent": "33%",
+      "comm": "$378.00"
+    },
+    {
+      "cust": "Patterson",
+      "job": "Patterson Res",
+      "ton": "2.6k",
+      "ton_rev": "2.6k",
+      "mat_rev": "1.2k",
+      "cogs": "2.54k",
+      "ton_cog": "1.34k",
+      "mat_cog": "1.2k",
+      "gp": "1.26k",
+      "gp_percent": "33%",
+      "comm": "$378.00"
+    },
+    {
+      "cust": "Cash C",
+      "job": "Round Rock",
+      "ton": "2.6k",
+      "ton_rev": "2.6k",
+      "mat_rev": "1.2k",
+      "cogs": "2.54k",
+      "ton_cog": "1.34k",
+      "mat_cog": "1.2k",
+      "gp": "1.26k",
+      "gp_percent": "33%",
+      "comm": "$378.00"
+    },
+    {
+      "cust": "Lonestar",
+      "job": "Lakewood Pk",
+      "ton": "2.6k",
+      "ton_rev": "2.6k",
+      "mat_rev": "1.2k",
+      "cogs": "2.54k",
+      "ton_cog": "1.34k",
+      "mat_cog": "1.2k",
+      "gp": "1.26k",
+      "gp_percent": "33%",
+      "comm": "$378.00"
+    }
+  ]
+}

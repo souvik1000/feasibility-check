@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "customer": "Evelyn Rodriguez",
+      "revenue": "$150K",
+      "gp": "21.5k",
+      "comm": "$900.00"
+    },
+    {
+      "rank": 2,
+      "customer": "Hudson Shrock",
+      "revenue": "$150K",
+      "gp": "22.4k",
+      "comm": "$189.00"
+    },
+    {
+      "rank": 3,
+      "customer": "Francis Standard",
+      "revenue": "$150K",
+      "gp": "21.5k",
+      "comm": "$900.00"
+    },
+    {
+      "rank": 4,
+      "customer": "Paola Mura",
+      "revenue": "$150K",
+      "gp": "22.4k",
+      "comm": "$189.00"
+    },
+    {
+      "rank": 5,
+      "customer": "Rebe Lane",
+      "revenue": "$150K",
+      "gp": "21.5k",
+      "comm": "$900.00"
+    }
+  ]
+}

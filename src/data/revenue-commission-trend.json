@@ -1,0 +1,16 @@
+{
+  "data": [
+    { "month": "Jan", "revenue": 65000, "commission": 2500 },
+    { "month": "Feb", "revenue": 67000, "commission": 2600 },
+    { "month": "Mar", "revenue": 68000, "commission": 2700 },
+    { "month": "Apr", "revenue": 74000, "commission": 2900 },
+    { "month": "May", "revenue": 72000, "commission": 2850 },
+    { "month": "Jun", "revenue": 78000, "commission": 3100 },
+    { "month": "Jul", "revenue": 76000, "commission": 3250 },
+    { "month": "Aug", "revenue": 80000, "commission": 3600 },
+    { "month": "Sep", "revenue": 72000, "commission": 3500 },
+    { "month": "Oct", "revenue": 70000, "commission": 3500 },
+    { "month": "Nov", "revenue": 66000, "commission": 3200 },
+    { "month": "Dec", "revenue": 84000, "commission": 3000 }
+  ]
+}

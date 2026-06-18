@@ -1,9 +1,7 @@
 import React from 'react';
 
+import Button from '../shared/Button';
 import { handleDownload } from "./helper";
-import DownloadIcon from '../../assets/download.svg';
-
-import './downloadable.css';
 
 export interface IImagesData {
   images: string[];
@@ -11,19 +9,12 @@ export interface IImagesData {
 
 const DownloadableZip: React.FC<IImagesData> = ({ images }) => {
   return (
-    <div className="download-btn-container">
-      <button
+    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+      <Button
         onClick={() => handleDownload(images)}
-        className="download-btn"
       >
-        <img 
-          src={DownloadIcon} 
-          alt="Download icon" 
-          width="16" 
-          height="16"
-        />
         Download Images (.ZIP)
-      </button>
+      </Button>
     </div>
   );
 };

@@ -1,0 +1,80 @@
+{
+  "total_tickets": 42,
+  "data": [
+    {
+      "ticket": "TN-4521",
+      "date": "May 2",
+      "customer": "Cash Center",
+      "job": "Oakwood River Proj",
+      "driver": "Limestone #171",
+      "revenue": "$78,400.00",
+      "ton_rev": "$34,300.00",
+      "mat_rev": "$44,100.00",
+      "cogs": "$50,480.00",
+      "ton_cog": "$30,824.00",
+      "mat_cog": "$19,656.00",
+      "gp": "$27,920.00",
+      "comm": "$3,078.00"
+    },
+    {
+      "ticket": "TN-4521",
+      "date": "May 2",
+      "customer": "Cash Center",
+      "job": "Sunrise Solar",
+      "driver": "Limestone #171",
+      "revenue": "$78,400.00",
+      "ton_rev": "$34,300.00",
+      "mat_rev": "$44,100.00",
+      "cogs": "$50,480.00",
+      "ton_cog": "$30,824.00",
+      "mat_cog": "$19,656.00",
+      "gp": "$27,920.00",
+      "comm": "$3,078.00"
+    },
+    {
+      "ticket": "TN-4521",
+      "date": "May 2",
+      "customer": "Cash Center",
+      "job": "FM 1431 Whd",
+      "driver": "Limestone #171",
+      "revenue": "$78,400.00",
+      "ton_rev": "$34,300.00",
+      "mat_rev": "$44,100.00",
+      "cogs": "$50,480.00",
+      "ton_cog": "$30,824.00",
+      "mat_cog": "$19,656.00",
+      "gp": "$27,920.00",
+      "comm": "$3,078.00"
+    },
+    {
+      "ticket": "TN-4521",
+      "date": "May 2",
+      "customer": "Cash Center",
+      "job": "West Lake Mtl",
+      "driver": "Limestone #171",
+      "revenue": "$78,400.00",
+      "ton_rev": "$34,300.00",
+      "mat_rev": "$44,100.00",
+      "cogs": "$50,480.00",
+      "ton_cog": "$30,824.00",
+      "mat_cog": "$19,656.00",
+      "gp": "$27,920.00",
+      "comm": "$3,078.00"
+    },
+    {
+      "ticket": "TN-4521",
+      "date": "May 2",
+      "customer": "Cash Center",
+      "job": "Oakwood River Proj",
+      "driver": "Limestone #171",
+      "revenue": "$78,400.00",
+      "ton_rev": "$34,300.00",
+      "mat_rev": "$44,100.00",
+      "cogs": "$50,480.00",
+      "ton_cog": "$30,824.00",
+      "mat_cog": "$19,656.00",
+      "gp": "$27,920.00",
+      "comm": "$3,078.00"
+    }
+  ]
+}
