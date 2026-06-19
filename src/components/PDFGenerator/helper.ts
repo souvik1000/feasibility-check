@@ -36,9 +36,7 @@ const convertSvgToPng = (
     })
 }
 
-const convertCanvasToPng = (
-    canvasElement: HTMLCanvasElement,
-): string => {
+const convertCanvasToPng = (canvasElement: HTMLCanvasElement): string => {
     try {
         return canvasElement.toDataURL("image/png")
     } catch (e) {
@@ -53,7 +51,7 @@ export const generateImageFromChart = async () => {
 
     // Capture Recharts SVG element
     const svgElement = document.querySelector(
-        ".recharts-trend-chart .recharts-wrapper svg",
+        ".recharts-trend-chart .recharts-wrapper > svg",
     ) as SVGElement | null
     if (svgElement) {
         chartImageUri = await convertSvgToPng(svgElement, 1200, 600)

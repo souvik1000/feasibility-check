@@ -46,7 +46,7 @@ const DualChart: React.FC<DualChartProps> = ({
                 alias: lineName,
             },
         },
-        geometryConfigs: [
+        geometryOptions: [
             {
                 geometry: "column",
                 color: "#0ea5e9",
@@ -83,8 +83,11 @@ const DualChart: React.FC<DualChartProps> = ({
             line: null,
             tickLine: null,
         },
-        yAxis: {
-            [barKey]: {
+        // Have to calculate max value dynamically for Ant-D to match
+        yAxis: [
+            {
+                min: 0,
+                max: 100000,
                 grid: {
                     line: {
                         style: {
@@ -102,7 +105,10 @@ const DualChart: React.FC<DualChartProps> = ({
                 line: null,
                 tickLine: null,
             },
-            [lineKey]: {
+            // Have to calculate max value dynamically for Ant-D to match
+            {
+                min: 0,
+                max: 3600,
                 grid: null,
                 label: {
                     style: {
@@ -113,7 +119,7 @@ const DualChart: React.FC<DualChartProps> = ({
                 line: null,
                 tickLine: null,
             },
-        },
+        ],
         legend: {
             position: "top" as const,
             offsetY: -10,
