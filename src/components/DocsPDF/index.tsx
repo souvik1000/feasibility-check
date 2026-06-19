@@ -32,12 +32,14 @@ interface DocsPDFProps {
     topCustomersData: TopCustomersData
     topMaterialsData: TopMaterialsData
     chartImage?: string
+    dualChartImage?: string
 }
 
 const DocsPDF: React.FC<DocsPDFProps> = ({
     dueData,
     earnedData,
     chartImage,
+    dualChartImage,
     topJobsData,
     trailingData,
     topTicketsData,
@@ -63,12 +65,23 @@ const DocsPDF: React.FC<DocsPDFProps> = ({
                 {/* Trend Chart */}
                 <View style={styles.sectionHeader}>
                     <Text style={styles.sectionTitle}>
-                        Revenue and Commission Trend
+                        Revenue and Commission Trend [Recharts]
                     </Text>
                 </View>
                 {chartImage && (
                     <View style={styles.chartContainer}>
                         <Image src={chartImage} style={styles.chart} />
+                    </View>
+                )}
+
+                <View style={styles.sectionHeader}>
+                    <Text style={styles.sectionTitle}>
+                        Revenue and Commission Trend [AntD design]
+                    </Text>
+                </View>
+                {dualChartImage && (
+                    <View style={styles.chartContainer}>
+                        <Image src={dualChartImage} style={styles.chart} />
                     </View>
                 )}
 

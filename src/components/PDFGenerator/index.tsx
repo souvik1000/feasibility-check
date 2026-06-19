@@ -13,32 +13,27 @@ import {
 } from "./pdf-generator.service"
 import Button from "../shared/Button"
 import BarChart from "../shared/BarChart"
-import { convertSvgToPng } from "./helper"
+import DualChart from "../shared/DualChart"
+import { generateImageFromChart } from "./helper"
 import { triggerFileDownload } from "../../helper"
 import type { BarChartItem } from "../shared/BarChart"
+import type { DualChartItem } from "../shared/DualChart"
 
 const PDFGenerator: React.FC = () => {
-    const dueData = use(duePromise)!
-    const earnedData = use(earnedPromise)!
-    const trendData = use(trendPromise)!
+    const dueData = use(duePromise)
+    const earnedData = use(earnedPromise)
+    const trendData = use(trendPromise)
 
-    const trailingData = use(trailingPromise)!
+    const trailingData = use(trailingPromise)
 
-    const topJobsData = use(topJobsPromise)!
-    const topCustomersData = use(topCustomersPromise)!
-    const topMaterialsData = use(topMaterialsPromise)!
+    const topJobsData = use(topJobsPromise)
+    const topCustomersData = use(topCustomersPromise)
+    const topMaterialsData = use(topMaterialsPromise)
 
-    const topTicketsData = use(topTicketsPromise)!
+    const topTicketsData = use(topTicketsPromise)
 
     const handleGeneratePDF = async () => {
-        let chartImageUri = ""
-        const chartSvg = document.querySelector(
-            ".recharts-trend-chart .recharts-wrapper > svg",
-        ) as SVGElement | null
-
-        if (chartSvg) {
-            chartImageUri = await convertSvgToPng(chartSvg, 600, 300)
-        }
+        const { chartImageUri, dualChartImageUri } = await generateImageFromChart();
 
         // Dynamically import react-pdf to build the PDF document on demand
         try {
@@ -46,19 +41,21 @@ const PDFGenerator: React.FC = () => {
 
             const doc = (
                 <DocsPDF
-                    dueData={dueData}
-                    earnedData={earnedData}
-                    trailingData={trailingData}
-                    topCustomersData={topCustomersData}
-                    topJobsData={topJobsData}
-                    topMaterialsData={topMaterialsData}
-                    topTicketsData={topTicketsData}
+                    dueData={dueData!}
+                    earnedData={earnedData!}
+                    trailingData={trailingData!}
+                    topCustomersData={topCustomersData!}
+                    topJobsData={topJobsData!}
+                    topMaterialsData={topMaterialsData!}
+                    topTicketsData={topTicketsData!}
                     chartImage={chartImageUri || undefined}
+                    dualChartImage={dualChartImageUri || undefined}
                 />
             )
 
             const blob = await pdf(doc).toBlob()
 
+            // Trigger download using the pure helper
             triggerFileDownload(
                 blob,
                 "Sand_and_Gravel_Commission_Payout_Report.pdf",
@@ -70,7 +67,6 @@ const PDFGenerator: React.FC = () => {
     }
 
     return (
-        // Use CSS/SCSS over inline styling
         <div
             style={{
                 display: "flex",
@@ -79,24 +75,43 @@ const PDFGenerator: React.FC = () => {
                 width: "100%",
             }}
         >
+            {/* Hidden Chart Container for SVG/Canvas capture (Rendered but invisible to user) */}
             <div
                 style={{
-                    width: "1000px",
-                    height: "500px",
-                    display: "none",
                     position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "1200px",
+                    height: "1250px",
+                    opacity: 0.001,
+                    pointerEvents: "none",
+                    zIndex: -9999,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "50px",
                 }}
             >
                 <BarChart
-                    width={600}
-                    height={300}
+                    width={1200}
+                    height={600}
                     xAxisKey="month"
                     barKey="revenue"
                     lineKey="commission"
                     barName="Revenue ($)"
                     lineName="Commission ($)"
                     className="recharts-trend-chart"
-                    data={trendData.data as unknown as BarChartItem[]}
+                    data={trendData?.data as unknown as BarChartItem[]}
+                />
+
+                <DualChart
+                    width={1200}
+                    height={600}
+                    xAxisKey="month"
+                    barKey="revenue"
+                    lineKey="commission"
+                    barName="Revenue ($)"
+                    lineName="Commission ($)"
+                    data={trendData?.data as unknown as DualChartItem[]}
                 />
             </div>
 
